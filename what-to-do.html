@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What To Do</title>
+  <link rel="icon" type="image/png" href="assets/LPU-Logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader-overlay">
+    <img src="assets/loading-screen.gif" alt="Loading..." style="max-width: 100%; padding: 0; margin: 0" />
+    <p id="loader-message">Getting things ready, please wait...</p>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
+        <!-- Logo + Toggler -->
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler me-2" type="button" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+          </button>
+          <a class="navbar-brand me-2" href="index.html">
+            <img src="banner-desktop.png" alt="LPU Logo" class="logo-img img-fluid" />
+          </a>
+        </div>
+
+        <!-- Search Bar -->
+        <!-- <form class="d-flex mt-2 mt-md-0" role="search" id="searchForm">
+          <input class="form-control me-2" type="search" placeholder="Search" id="searchInput" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hidden Nav Links -->
+  <div class="top-links" id="navLinks">
+    <div class="dropdown">
+      <a class="dropdown-toggle" style="cursor: default">COECSA Map</a>
+      <div class="dropdown-menu">
+        <a href="coesca.html">COECSA Building</a>
+        <a href="groundfloor.html">Ground Floor</a>
+        <a href="1st-floor.html">1st Floor</a>
+        <a href="2nd-floor.html">2nd Floor</a>
+        <a href="3rd-floor.html">3rd Floor</a>
+        <a href="5th-floor.html">5th Floor</a>
+        <a href="6th-floor.html">6th Floor</a>
+        <a href="7th-floor.html">7th Floor</a>
+        <a href="safe-zone.html">Safe Zone</a>
+      </div>
+    </div>
+
+    <span class="separator d-none d-md-inline">|</span>
+    <div class="dropdown">
+      <a class="dropdown-toggle active-page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Guidelines
+      </a>
+      <div class="dropdown-menu">
+        <a href="what-to-do.html">What To Do</a>
+        <a href="contacts.html">Contacts</a>
+      </div>
+    </div>
+
+    <span class="separator d-none d-md-inline">|</span>
+    <div class="dropdown">
+      <a href="" class="dropdown-toggle" style="cursor: pointer" onclick="event.preventDefault()">About Us</a>
+      <div class="dropdown-menu">
+        <a href="Mapa-Alerto.html">Mapa Alerto</a>
+        <a href="university-profile.html">University Profile</a>
+      </div>
+    </div>
+
+    <span class="separator d-none d-md-inline">|</span>
+    <a href="events.html">Events</a>
+
+    <span class="separator d-none d-md-inline">|</span>
+    <a href="faq.html">FAQs</a>
+  </div>
+
+  <!-- Emergency Instructions -->
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-4" data-aos="fade-down">
+      What To Do <br /><small class="fw-normal">during Emergency</small>
+    </h2>
+    <div class="row">
+      <!-- Left Column: 1,2,3 -->
+      <div class="col-lg-6 d-grid gap-4">
+        <div class="emergency-card" data-aos="fade-up">
+          <img src="assets/what-to-do/1.png" alt="Listen" />
+          <div>
+            <h5>1. Listen to Instructions</h5>
+            <p>• Follow your teacher or staff directions immediately.</p>
+            <p>
+              • Don’t panic or shout – stay quiet so you can hear updates.
+            </p>
+          </div>
+        </div>
+
+        <div class="emergency-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/what-to-do/2.png" alt="Emergency Types" />
+          <div>
+            <h5>2. Emergency Types</h5>
+            <p>
+              • Fire: Evacuate quickly, don’t use elevators, stay low if
+              there’s smoke.
+            </p>
+            <p>
+              • Lockdown: Hide, lock doors, silence your phone, stay quiet.
+            </p>
+            <p>• Earthquake: Drop, Cover, and Hold under sturdy furniture.</p>
+            <p>• Weather Emergency: Move to designated safe areas.</p>
+          </div>
+        </div>
+
+        <div class="emergency-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/what-to-do/3.png" alt="Stick With Group" />
+          <div>
+            <h5>3. Stick With Your Group</h5>
+            <p>• Stay with your class or assigned buddy.</p>
+            <p>• Don’t wander off or try to go home without permission.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: 4,5,6,7 -->
+    
+      <div class="col-lg-6 d-grid gap-4 mt-4 mt-lg-0">
+        <div class="emergency-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/what-to-do/4.png" alt="No Phone" />
+          <div>
+            <h5>
+              4. Stay Off Your Phone
+              <span style="font-weight: normal">(Unless Necessary)</span>
+            </h5>
+            <p>
+              • Use your phone only to contact emergency services or if
+              instructed.
+            </p>
+            <p>• Networks may be overloaded.</p>
+          </div>
+        </div>
+
+        <div class="emergency-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/what-to-do/5.png" alt="Know the Exits" />
+          <div>
+            <h5>5. Know the Exits and Safe Zones</h5>
+            <p>• Memorize evacuation routes and meeting points.</p>
+            <p>• Know where emergency kits and alarms are.</p>
+          </div>
+        </div>
+
+        <div class="emergency-card" data-aos="fade-up" data-aos-delay="500">
+          <img src="assets/what-to-do/6.png" alt="Help if You Can" />
+          <div>
+            <h5>6. Help If You Can</h5>
+            <p>
+              • If someone is hurt or confused, help them stay calm or notify
+              an adult.
+            </p>
+          </div>
+        </div>
+
+        <div class="emergency-card" data-aos="fade-up" data-aos-delay="600">
+          <img src="assets/what-to-do/7.png" alt="Report Suspicious" />
+          <div>
+            <h5>7. Report Anything Suspicious</h5>
+            <p>
+              • Tell a teacher or staff member if you see something unusual or
+              dangerous.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fire Extinguisher Section -->
+  <section class="container my-5 text-center">
+    <div class="fe-image-wrapper" data-aos="zoom-in">
+      <img src="assets/what-to-do/Fire-Extinguisher.png" alt="How to use a fire extinguisher" class="img-fluid" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-column">
+          <h2 class="fw-semibold">About Us</h2>
+          <ul>
+            <li><a href="mapa-alerto.html">Mapa-Alerto</a></li>
+            <li><a href="university-profile.html">University Profile</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h2 class="fw-semibold">Events</h2>
+          <ul>
+            <li><a href="events.html">Seminar and Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h2 class="fw-semibold">COECSA Map</h2>
+          <ul>
+            <li><a href="coesca.html">COECSA Building</a></li>
+            <li><a href="groundfloor.html">Ground Floor</a></li>
+            <li><a href="1st-floor.html">1st Floor</a></li>
+            <li><a href="2nd-floor.html">2nd Floor</a></li>
+            <li><a href="3rd-floor.html">3rd Floor</a></li>
+            <li><a href="5th-floor.html">5th Floor</a></li>
+            <li><a href="6th-floor.html">6th Floor</a></li>
+            <li><a href="7th-floor.html">7th Floor</a></li>
+            <li><a href="safe-zone.html">Safe Zone</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h2 class="fw-semibold">Emergency Guide</h2>
+          <ul>
+            <li><a href="what-to-do.html">What to do</a></li>
+            <li><a href="emergency.html">Contacts</a></li>
+          </ul>
+          <h2 style="margin-top: 30px" class="fw-semibold">FAQs</h2>
+          <ul>
+            <li><a href="faq.html">Security</a></li>
+            <li><a href="faq.html">Map</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

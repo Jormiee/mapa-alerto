@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events - Seminar and Trainings</title>
+  <link rel="icon" type="image/png" href="assets/LPU-Logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader-overlay">
+    <img src="assets/loading-screen.gif" alt="Loading..." style="max-width: 100%; padding: 0; margin: 0" />
+    <p id="loader-message">Getting things ready, please wait...</p>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
+        <!-- Logo + Toggler -->
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler me-2" type="button" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+          </button>
+          <a class="navbar-brand me-2" href="index.html">
+            <img src="banner-desktop.png" alt="LPU Logo" class="logo-img img-fluid" />
+          </a>
+        </div>
+
+        <!-- Search Bar -->
+        <!-- <form class="d-flex mt-2 mt-md-0" role="search" id="searchForm">
+          <input class="form-control me-2" type="search" placeholder="Search" id="searchInput" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hidden Nav Links -->
+  <div class="top-links" id="navLinks">
+    <div class="dropdown">
+      <a class="dropdown-toggle" style="cursor: default">COECSA Map</a>
+      <div class="dropdown-menu">
+        <a href="coesca.html">COECSA Building</a>
+        <a href="groundfloor.html">Ground Floor</a>
+        <a href="1st-floor.html">1st Floor</a>
+        <a href="2nd-floor.html">2nd Floor</a>
+        <a href="3rd-floor.html">3rd Floor</a>
+        <a href="5th-floor.html">5th Floor</a>
+        <a href="6th-floor.html">6th Floor</a>
+        <a href="7th-floor.html">7th Floor</a>
+        <a href="safe-zone.html">Safe Zone</a>
+      </div>
+    </div>
+
+    <span class="separator d-none d-md-inline">|</span>
+    <div class="dropdown">
+      <a class="dropdown-toggle" style="cursor: default">Guidelines</a>
+      <div class="dropdown-menu">
+        <a href="what-to-do.html">What To Do</a>
+        <a href="contacts.html">Contacts</a>
+      </div>
+    </div>
+
+    <span class="separator d-none d-md-inline">|</span>
+    <div class="dropdown">
+      <a href="" class="dropdown-toggle" style="cursor: pointer" onclick="event.preventDefault()">About Us</a>
+      <div class="dropdown-menu">
+        <a href="Mapa-Alerto.html">Mapa Alerto</a>
+        <a href="university-profile.html">University Profile</a>
+      </div>
+    </div>
+
+    <span class="separator d-none d-md-inline">|</span>
+    <a href="events.html">Events</a>
+
+    <span class="separator d-none d-md-inline">|</span>
+    <a href="faq.html">FAQs</a>
+  </div>
+
+  <div class="container custom-margin-top" data-aos="fade-down" data-aos-delay="50">
+    <h3>Seminar and Trainings</h3>
+    <hr class="event-divider" />
+
+    <div class="event-box" data-aos="fade-down" data-aos-delay="100">
+      <div class="row">
+        <div class="col-12 col-lg-10">
+          <p><strong>Sat, Apr 26</strong></p>
+          <p class="event-title">
+            Psychological First Aid: Supporting people in crisis/ Webinar ^
+          </p>
+          <p>April 26, 2025, 8:30 AM – 11:30 AM</p>
+          <p>Webinar</p>
+          <p>
+            Join their free webinar for an insightful Psychological First Aid
+            Webinar and equip yourself with essential skills to help others
+            navigate trauma and distress.
+          </p>
+        </div>
+        <div class="col-12 col-lg-2 text-lg-end mt-3 mt-lg-0">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0mOsQGBR3aIoL517scrOudkayH2v4ww_Jpo19Bib_0axNEQ/viewform"
+            class="btn visit-btn" target="_blank">Visit us</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="event-divider" />
+
+    <div class="event-box" data-aos="fade-down" data-aos-delay="150">
+      <div class="row">
+        <div class="col-12 col-lg-10">
+          <p><strong>Wed, Jun 18</strong></p>
+          <p class="event-title">
+            High level high risk facility emergency response skill training
+            course ^
+          </p>
+          <p>Jun 18, 2025, 7:00 AM – Jun 25, 2025, 5:00 PM</p>
+          <p>Port Area, Manila, Metro Manila, Philippines</p>
+          <p>
+            Be Ready When It Matters Most. Master life-saving skills and lead
+            with confidence in high-risk emergencies. Join our elite response
+            training — because seconds count.
+          </p>
+        </div>
+        <div class="col-12 col-lg-2 text-lg-end mt-3 mt-lg-0">
+          <a href="https://www.facebook.com/share/19f36gmS1j/" class="btn visit-btn" target="_blank">Visit us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-column">
+          <h2 class="fw-semibold">About Us</h2>
+          <ul>
+            <li><a href="mapa-alerto.html">Mapa-Alerto</a></li>
+            <li><a href="university-profile.html">University Profile</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h2 class="fw-semibold">Events</h2>
+          <ul>
+            <li><a href="events.html">Seminar and Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h2 class="fw-semibold">COECSA Map</h2>
+          <ul>
+            <li><a href="coesca.html">COECSA Building</a></li>
+            <li><a href="groundfloor.html">Ground Floor</a></li>
+            <li><a href="1st-floor.html">1st Floor</a></li>
+            <li><a href="2nd-floor.html">2nd Floor</a></li>
+            <li><a href="3rd-floor.html">3rd Floor</a></li>
+            <li><a href="5th-floor.html">5th Floor</a></li>
+            <li><a href="6th-floor.html">6th Floor</a></li>
+            <li><a href="7th-floor.html">7th Floor</a></li>
+            <li><a href="safe-zone.html">Safe Zone</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h2 class="fw-semibold">Emergency Guide</h2>
+          <ul>
+            <li><a href="what-to-do.html">What to do</a></li>
+            <li><a href="emergency.html">Contacts</a></li>
+          </ul>
+          <h2 style="margin-top: 30px" class="fw-semibold">FAQs</h2>
+          <ul>
+            <li><a href="faq.html">Security</a></li>
+            <li><a href="faq.html">Map</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
