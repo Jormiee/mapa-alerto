@@ -1,5 +1,5 @@
   // Constants
-  const LOADER_DURATION = 2000; // Set to 3 seconds (3000ms)
+  const LOADER_DURATION = 400; // Set to 3 seconds (3000ms)
 
   // Loader functionality
   window.addEventListener("load", function () {
