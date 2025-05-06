@@ -19,10 +19,19 @@
     <p id="loader-message">Getting things ready, please wait...</p>
   </div>
 
+  <!-- Mobile Search Container (Fixed position overlay) -->
+  <div class="mobile-search-container" id="mobileSearchContainer">
+    <div class="mobile-search-wrapper">
+      <input type="text" class="search-input" id="mobileSearchInput" placeholder="Search pages..." autocomplete="off">
+      <i class="bi bi-x-lg mobile-search-close" id="mobileSearchClose"></i>
+      <div class="search-results" id="mobileSearchResults"></div>
+    </div>
+  </div>
+
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
-        <!-- Logo + Toggler -->
+        <!-- Logo + Toggler + Mobile Search Icon -->
         <div class="d-flex align-items-center">
           <button class="navbar-toggler me-2" type="button" onclick="toggleMenu()">
             <i class="bi bi-list"></i>
@@ -30,13 +39,20 @@
           <a class="navbar-brand me-2" href="index.html">
             <img src="banner-desktop.png" alt="LPU Logo" class="logo-img img-fluid" />
           </a>
+          <!-- Mobile Search Button -->
+          <button class="mobile-search-btn" id="mobileSearchBtn">
+            <i class="bi bi-search text-white"></i>
+          </button>
         </div>
 
-        <!-- Search Bar -->
-        <!-- <form class="d-flex mt-2 mt-md-0" role="search" id="searchForm">
-          <input class="form-control me-2" type="search" placeholder="Search" id="searchInput" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form> -->
+        <!-- Desktop Search Bar -->
+        <div class="navbar-nav-section">
+          <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search pages..." autocomplete="off">
+            <i class="bi bi-search search-icon" id="searchIcon"></i>
+            <div class="search-results" id="searchResults"></div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -131,7 +147,7 @@
       </div>
 
       <!-- Right Column: 4,5,6,7 -->
-    
+
       <div class="col-lg-6 d-grid gap-4 mt-4 mt-lg-0">
         <div class="emergency-card" data-aos="fade-up" data-aos-delay="300">
           <img src="assets/what-to-do/4.png" alt="No Phone" />

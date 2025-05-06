@@ -19,10 +19,19 @@
     <p id="loader-message">Getting things ready, please wait...</p>
   </div>
 
+  <!-- Mobile Search Container (Fixed position overlay) -->
+  <div class="mobile-search-container" id="mobileSearchContainer">
+    <div class="mobile-search-wrapper">
+      <input type="text" class="search-input" id="mobileSearchInput" placeholder="Search pages..." autocomplete="off">
+      <i class="bi bi-x-lg mobile-search-close" id="mobileSearchClose"></i>
+      <div class="search-results" id="mobileSearchResults"></div>
+    </div>
+  </div>
+
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
-        <!-- Logo + Toggler -->
+        <!-- Logo + Toggler + Mobile Search Icon -->
         <div class="d-flex align-items-center">
           <button class="navbar-toggler me-2" type="button" onclick="toggleMenu()">
             <i class="bi bi-list"></i>
@@ -30,13 +39,20 @@
           <a class="navbar-brand me-2" href="index.html">
             <img src="banner-desktop.png" alt="LPU Logo" class="logo-img img-fluid" />
           </a>
+          <!-- Mobile Search Button -->
+          <button class="mobile-search-btn" id="mobileSearchBtn">
+            <i class="bi bi-search text-white"></i>
+          </button>
         </div>
 
-        <!-- Search Bar -->
-        <!-- <form class="d-flex mt-2 mt-md-0" role="search" id="searchForm">
-          <input class="form-control me-2" type="search" placeholder="Search" id="searchInput" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form> -->
+        <!-- Desktop Search Bar -->
+        <div class="navbar-nav-section">
+          <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search pages..." autocomplete="off">
+            <i class="bi bi-search search-icon" id="searchIcon"></i>
+            <div class="search-results" id="searchResults"></div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -44,18 +60,25 @@
   <!-- Hidden Nav Links -->
   <div class="top-links" id="navLinks">
     <div class="dropdown">
-      <a class="dropdown-toggle" style="cursor: default">COECSA Map</a>
-      <div class="dropdown-menu">
-        <a href="coesca.html">COECSA Building</a>
-        <a href="groundfloor.html">Ground Floor</a>
-        <a href="1st-floor.html">1st Floor</a>
-        <a href="2nd-floor.html">2nd Floor</a>
-        <a href="3rd-floor.html">3rd Floor</a>
-        <a href="5th-floor.html">5th Floor</a>
-        <a href="6th-floor.html">6th Floor</a>
-        <a href="7th-floor.html">7th Floor</a>
-        <a href="safe-zone.html">Safe Zone</a>
-      </div>
+      <a class="dropdown-toggle active-page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        COECSA Map
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item" href="coesca.html">COECSA Building</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="groundfloor.html">Ground Floor</a>
+        </li>
+        <li><a class="dropdown-item" href="1st-floor.html">1st Floor</a></li>
+        <li><a class="dropdown-item" href="2nd-floor.html">2nd Floor</a></li>
+        <li><a class="dropdown-item" href="3rd-floor.html">3rd Floor</a></li>
+        <li><a class="dropdown-item" href="5th-floor.html">5th Floor</a></li>
+        <li><a class="dropdown-item" href="6th-floor.html">6th Floor</a></li>
+        <li><a class="dropdown-item" href="7th-floor.html">7th Floor</a></li>
+        <li><a class="dropdown-item" href="safe-zone.html">Safe Zone</a></li>
+
+      </ul>
     </div>
 
     <span class="separator d-none d-md-inline">|</span>
@@ -69,9 +92,7 @@
 
     <span class="separator d-none d-md-inline">|</span>
     <div class="dropdown">
-      <a class="dropdown-toggle active-page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        About Us
-      </a>
+      <a href="" class="dropdown-toggle" style="cursor: pointer" onclick="event.preventDefault()">About Us</a>
       <div class="dropdown-menu">
         <a href="mapa-alerto.html">Mapa Alerto</a>
         <a href="university-profile.html">University Profile</a>
@@ -90,7 +111,8 @@
       <h2 class="fw-bold text-center mb-4 fs-1" data-aos="fade-down" data-aos-delay="100">MAPA-ALERTO</h2>
 
       <div class="col-lg-6 mb-4 mb-lg-0">
-        <img src="assets/about-us/mapa-a.png" alt="Mapa Alerto Evacuation Maps" class="img-fluid px-2 px-md-5" data-aos="fade-down" data-aos-delay="200"/>
+        <img src="assets/about-us/mapa-a.png" alt="Mapa Alerto Evacuation Maps" class="img-fluid px-2 px-md-5"
+          data-aos="fade-down" data-aos-delay="200" />
       </div>
 
       <div class="col-lg-6 text-center text-md-start px-4" data-aos="fade-down" data-aos-delay="300">
