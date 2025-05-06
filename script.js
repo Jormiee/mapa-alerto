@@ -42,23 +42,23 @@
     easing: 'ease-out'
   });
 
-    
+
   // Define all available pages for search
   const pages = [
     { title: "Home", url: "index.html", keywords: ["home", "main", "landing"] },
     { title: "COECSA Building", url: "coesca.html", keywords: ["coecsa", "building", "map"] },
     { title: "Ground Floor", url: "groundfloor.html", keywords: ["ground floor", "ground", "floor", "g/f", "gf"] },
-    { title: "1st Floor", url: "1st-floor.html", keywords: ["1st floor", "first floor", "floor 1"] },
-    { title: "2nd Floor", url: "2nd-floor.html", keywords: ["2nd floor", "second floor", "floor 2"] },
-    { title: "3rd Floor", url: "3rd-floor.html", keywords: ["3rd floor", "third floor", "floor 3"] },
-    { title: "5th Floor", url: "5th-floor.html", keywords: ["5th floor", "fifth floor", "floor 5"] },
-    { title: "6th Floor", url: "6th-floor.html", keywords: ["6th floor", "sixth floor", "floor 6"] },
-    { title: "7th Floor", url: "7th-floor.html", keywords: ["7th floor", "seventh floor", "floor 7"] },
-    { title: "Safe Zone", url: "safe-zone.html", keywords: ["safe zone", "safety", "evacuation zone"] },
-    { title: "What To Do", url: "what-to-do.html", keywords: ["what to do", "emergency", "guidelines", "procedures"] },
+    { title: "1st Floor", url: "1st-floor.html", keywords: ["1st floor", "first floor", "floor 1", "1f"] },
+    { title: "2nd Floor", url: "2nd-floor.html", keywords: ["2nd floor", "second floor", "floor 2", "2f"] },
+    { title: "3rd Floor", url: "3rd-floor.html", keywords: ["3rd floor", "third floor", "floor 3", "3f"] },
+    { title: "5th Floor", url: "5th-floor.html", keywords: ["5th floor", "fifth floor", "floor 5", "5f"] },
+    { title: "6th Floor", url: "6th-floor.html", keywords: ["6th floor", "sixth floor", "floor 6", "6f"] },
+    { title: "7th Floor", url: "7th-floor.html", keywords: ["7th floor", "seventh floor", "floor 7", "7f"] },
+    { title: "Safe Zone", url: "safe-zone.html", keywords: ["safe zone", "safety", "evacuation zone", "sz"] },
+    { title: "What To Do", url: "what-to-do.html", keywords: ["what to do", "emergency", "guidelines", "procedures", "wtd"] },
     { title: "Contacts", url: "contacts.html", keywords: ["contacts", "emergency contacts", "phone numbers"] },
-    { title: "Mapa Alerto", url: "mapa-alerto.html", keywords: ["mapa alerto", "about", "project"] },
-    { title: "University Profile", url: "university-profile.html", keywords: ["university", "profile", "lpu", "cavite"] },
+    { title: "Mapa Alerto", url: "mapa-alerto.html", keywords: ["mapa alerto", "about", "project","overview"] },
+    { title: "University Profile", url: "university-profile.html", keywords: ["university", "profile", "lpu", "cavite", "history", "viva pirata"] },
     { title: "Events", url: "events.html", keywords: ["events", "seminars", "training"] },
     { title: "FAQs", url: "faq.html", keywords: ["faq", "faqs", "questions", "security", "help"] }
   ];
