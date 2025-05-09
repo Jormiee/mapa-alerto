@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>7th Floor - Mapa-Alerto</title>
+    <title>Comics - Mapa-Alerto</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="background-color: #fff">
+<body>
     <!-- Loader -->
     <div id="loader-overlay">
         <img src="assets/loading-screen.gif" alt="Loading..." style="max-width: 100%; padding: 0; margin: 0" />
@@ -64,7 +64,10 @@
     <!-- Hidden Nav Links -->
     <div class="top-links" id="navLinks">
         <div class="dropdown">
-            <a class="dropdown-toggle" style="cursor: default">COECSA Map</a>
+            <a class="dropdown-toggle active-page" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                COECSA Map
+            </a>
             <div class="dropdown-menu">
                 <a href="coecsa.html">COECSA Building</a>
                 <a href="groundfloor.html">Ground Floor</a>
@@ -103,39 +106,14 @@
         <a href="faq.html">FAQs</a>
     </div>
 
-    <section class="building-section container-fluid py-5 bg-white">
-        <div class="row align-items-center gap-4" data-aos="zoom-in-down" data-aos-duration="800">
-            <!-- Building Image -->
-            <div class="col-md-8 mb-4 mb-md-0">
-                <img src="./assets/test-floor.png" alt="COECSA Building" class="building-image" />
-            </div>
-
-            <!-- Right Text -->
-            <div class="col-md-3 text-center text-md-start">
-                <h2 class="fw-bold fs-1">
-                    7th<br /><small class="fw-normal">Floor</small>
-                </h2>
-                <div class="floor-list mt-3 fs-5">
-                    <a href="safe-zone.html">Safe Zone</a>
-                    <a href="7th-floor.html">7th Floor</a>
-                    <a href="6th-floor.html">6th Floor</a>
-                    <a href="5th-floor.html">5th Floor</a>
-                    <a href="3rd-floor.html">3rd Floor</a>
-                    <a href="2nd-floor.html">2nd Floor</a>
-                    <a href="1st-floor.html">1st Floor</a>
-                    <a href="groundfloor.html">Ground Floor</a>
-                </div>
-            </div>
+    <section class="comics-img-section container pt-5">
+        <div class="row align-items-center" data-aos="zoom-in-down" data-aos-duration="1500">
+            <h1 class="fw-bold text-center">COMICS</h1>
+           <img src="/assets/comics.jpeg" alt="Comics Image" class="img-fluid comics-img p-4" />
         </div>
+        <button class="scan-button mx-auto d-block mb-4" onclick="window.location.href='comics.html';">Scan Me</button>
     </section>
 
-    <!-- Footer Description -->
-    <div class="footer-bar px-3 px-md-5 py-md-4 py-3 text-justify">
-        Click on the floors to automatically open the Evacuation Thematic Map for
-        the COECSA Building at LPU Cavite. The map will provide detailed
-        evacuation routes and safety information to help you navigate emergency
-        situations.
-    </div>
 
     <footer class="footer">
         <div class="container">

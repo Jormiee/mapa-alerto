@@ -542,6 +542,24 @@ body {
   color: white;
 }
 
+/* COMICS - STYLING */
+.comics-section {
+  padding: 4rem 2rem;
+}
+
+.scan-button {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.scan-button:hover {
+  background-color: #6c0001;
+  color: white;
+}
+
 /* NAVBAR - STYLING */
 .navbar-custom {
   background-color: #8c0001;
@@ -819,6 +837,7 @@ body {
 .highlight-red {
   color: #8c0001;
   /* font-weight: bold; */
+  text-decoration: none;
 }
 
 .section-divider {

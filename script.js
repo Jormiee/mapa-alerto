@@ -46,21 +46,22 @@
   // Define all available pages for search
   const pages = [
     { title: "Home", url: "index.html", keywords: ["home", "main", "landing"] },
-    { title: "COECSA Building", url: "coesca.html", keywords: ["coecsa", "building", "map"] },
+    { title: "COECSA Building", url: "coecsa.html", keywords: ["coecsa", "building", "map"] },
     { title: "Ground Floor", url: "groundfloor.html", keywords: ["ground floor", "ground", "floor", "g/f", "gf"] },
     { title: "1st Floor", url: "1st-floor.html", keywords: ["1st floor", "first floor", "floor 1", "1f"] },
-    { title: "2nd Floor", url: "2nd-floor.html", keywords: ["2nd floor", "second floor", "floor 2", "2f"] },
-    { title: "3rd Floor", url: "3rd-floor.html", keywords: ["3rd floor", "third floor", "floor 3", "3f"] },
-    { title: "5th Floor", url: "5th-floor.html", keywords: ["5th floor", "fifth floor", "floor 5", "5f"] },
-    { title: "6th Floor", url: "6th-floor.html", keywords: ["6th floor", "sixth floor", "floor 6", "6f"] },
-    { title: "7th Floor", url: "7th-floor.html", keywords: ["7th floor", "seventh floor", "floor 7", "7f"] },
+    { title: "2nd Floor", url: "2nd-floor.html", keywords: ["2nd floor", "second floor", "floor 2", "2f", "classroom 201", "classroom 202", "classroom 203", "classroom 204", "information and communication technology department office", "coecsa administrative office", "gs deans office" , "consulatants office", "accreditation room", "doe faculty room", "coecsa deans office"] },
+    { title: "3rd Floor", url: "3rd-floor.html", keywords: ["3rd floor", "third floor", "floor 3", "3f","classroom 301","classroom 302","classroom 303","classroom 304","classroom 305","classroom 306","classroom 307","classroom 308","doa faculty room", "dcs faculty room", "cfad consultation and defense room","cfad faculty room", "cfad deans office"] },
+    { title: "5th Floor", url: "5th-floor.html", keywords: ["5th floor", "fifth floor", "floor 5", "5f", "energy conversion laboratory", "circuits laboratory", "coecsa laboratory office", "ergonomics laboratory", "electronics laboratory", "hardware networking laboratory", "industrial automation and robotics laboratory", "communication laboratory", "methods study laboratory"] },
+    { title: "6th Floor", url: "6th-floor.html", keywords: ["6th floor", "sixth floor", "floor 6", "6f", "classroom 601", "classroom 602", "classroom 603", "classroom 604", "classroom 605", "classroom 606", "classroom 607", "classroom 608", "classroom 609", "classroom 610", "classroom 611", "classroom 612", "classroom 613", "classroom 614"] },
+    { title: "7th Floor", url: "7th-floor.html", keywords: ["7th floor", "seventh floor", "floor 7", "7f", "classroom 701", "classroom 702", "classroom 703", "classroom 704", "classroom 705", "classroom 706", "classroom 707", "classroom 708", "classroom 709", "classroom 710", "classroom 711", "classroom 712", "classroom 713", "classroom 714"] },
     { title: "Safe Zone", url: "safe-zone.html", keywords: ["safe zone", "safety", "evacuation zone", "sz"] },
     { title: "What To Do", url: "what-to-do.html", keywords: ["what to do", "emergency", "guidelines", "procedures", "wtd"] },
     { title: "Contacts", url: "contacts.html", keywords: ["contacts", "emergency contacts", "phone numbers"] },
     { title: "Mapa-Alerto", url: "mapa-alerto.html", keywords: ["mapa-alerto", "mapa alerto", "about", "project","overview"] },
     { title: "University Profile", url: "university-profile.html", keywords: ["university", "profile", "lpu", "cavite", "history", "viva pirata"] },
     { title: "Events", url: "events.html", keywords: ["events", "seminars", "training"] },
-    { title: "FAQs", url: "faq.html", keywords: ["faq", "faqs", "questions", "security", "help"] }
+    { title: "FAQs", url: "faq.html", keywords: ["faq", "faqs", "questions", "security", "help"] },
+    { title: "Comics", url: "comics.html", keywords: ["comic", "comics", "scan me", "cartoon", "drawing"] }
   ];
 
   document.addEventListener('DOMContentLoaded', function () {
