@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>3rd Floor - Mapa-Alerto</title>
+    <title>3rd-floor - Mapa-Alerto</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -24,8 +24,7 @@
     <!-- Mobile Search Container (Fixed position overlay) -->
     <div class="mobile-search-container" id="mobileSearchContainer">
         <div class="mobile-search-wrapper">
-            <input type="text" class="search-input" id="mobileSearchInput" placeholder="Search pages..."
-                autocomplete="off">
+            <input type="text" class="search-input" id="mobileSearchInput" placeholder="Search pages..." autocomplete="off">
             <i class="bi bi-x-lg mobile-search-close" id="mobileSearchClose"></i>
             <div class="search-results" id="mobileSearchResults"></div>
         </div>
@@ -51,8 +50,7 @@
                 <!-- Desktop Search Bar -->
                 <div class="navbar-nav-section">
                     <div class="search-container">
-                        <input type="text" class="search-input" id="searchInput" placeholder="Search pages..."
-                            autocomplete="off">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search pages..." autocomplete="off">
                         <i class="bi bi-search search-icon" id="searchIcon"></i>
                         <div class="search-results" id="searchResults"></div>
                     </div>
@@ -107,13 +105,14 @@
         <div class="row align-items-center gap-4" data-aos="zoom-in-down" data-aos-duration="800">
             <!-- Building Image -->
             <div class="col-md-8 mb-4 mb-md-0">
-                <img src="./assets/test-floor.png" alt="COECSA Building" class="building-image" />
+                <img src="./assets/test-floor.png" alt="3rd floor image Image" class="building-image" style="cursor: zoom-in;" 
+                    data-bs-toggle="modal" data-bs-target="#imageModal" />
             </div>
 
             <!-- Right Text -->
             <div class="col-md-3 text-center text-md-start">
                 <h2 class="fw-bold fs-1">
-                    3rd<br /><small class="fw-normal">Floor</small>
+                    Safe<br /><small class="fw-normal">Zone</small>
                 </h2>
                 <div class="floor-list mt-3 fs-5">
                     <a href="safe-zone.html">Safe Zone</a>
@@ -185,6 +184,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center p-0">
+                    <img src="./assets/test-floor.png" class="img-fluid rounded" alt="Zoomed Safe Zone" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

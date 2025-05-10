@@ -201,9 +201,23 @@
   <!-- Fire Extinguisher Section -->
   <section class="container my-5 text-center">
     <div class="fe-image-wrapper" data-aos="zoom-in">
-      <img src="assets/fire-extinguisher.png" alt="How to use a fire extinguisher" class="img-fluid" />
+        <!-- Image to zoom -->
+        <img src="assets/fire-extinguisher.png" alt="How to use a fire extinguisher" class="img-fluid" 
+            style="cursor: zoom-in;" data-bs-toggle="modal" data-bs-target="#imageModalFe" />
     </div>
-  </section>
+</section>
+
+<!-- Image Modal for Fire Extinguisher Image -->
+<div class="modal fade" id="imageModalFe" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body text-center p-0">
+                <img src="assets/fire-extinguisher.png" class="img-fluid rounded" alt="Zoomed Fire Extinguisher" />
+            </div>
+        </div>
+    </div>
+</div>
+
 
   <!-- Footer -->
   <footer class="footer">

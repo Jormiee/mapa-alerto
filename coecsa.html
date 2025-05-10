@@ -24,8 +24,7 @@
     <!-- Mobile Search Container (Fixed position overlay) -->
     <div class="mobile-search-container" id="mobileSearchContainer">
         <div class="mobile-search-wrapper">
-            <input type="text" class="search-input" id="mobileSearchInput" placeholder="Search pages..."
-                autocomplete="off">
+            <input type="text" class="search-input" id="mobileSearchInput" placeholder="Search pages..." autocomplete="off">
             <i class="bi bi-x-lg mobile-search-close" id="mobileSearchClose"></i>
             <div class="search-results" id="mobileSearchResults"></div>
         </div>
@@ -51,8 +50,7 @@
                 <!-- Desktop Search Bar -->
                 <div class="navbar-nav-section">
                     <div class="search-container">
-                        <input type="text" class="search-input" id="searchInput" placeholder="Search pages..."
-                            autocomplete="off">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search pages..." autocomplete="off">
                         <i class="bi bi-search search-icon" id="searchIcon"></i>
                         <div class="search-results" id="searchResults"></div>
                     </div>
@@ -64,8 +62,7 @@
     <!-- Hidden Nav Links -->
     <div class="top-links" id="navLinks">
         <div class="dropdown">
-            <a class="dropdown-toggle active-page" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <a class="dropdown-toggle active-page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 COECSA Map
             </a>
             <div class="dropdown-menu">
@@ -109,8 +106,9 @@
     <section class="building-section container-fluid pt-5">
         <div class="row align-items-center" data-aos="zoom-in-down" data-aos-duration="1500">
             <!-- Building Image -->
-            <div class="col-md-8 mb-4 mb-md-0">
-                <img src="./assets/homepage/building.png" alt="COECSA Building" class="building-image" />
+            <div class="col-md-8 mb-4 mb-md-0 text-center">
+                <img src="./assets/homepage/building.png" alt="COECSA Building" class="building-image img-fluid" style="cursor: zoom-in;" 
+                    data-bs-toggle="modal" data-bs-target="#imageModal" />
             </div>
 
             <!-- Right Text -->
@@ -134,10 +132,8 @@
 
     <!-- Footer Description -->
     <div class="footer-bar px-3 px-md-5 py-md-4 py-3 text-justify">
-        Click on the floors to automatically open the Evacuation Thematic Map for
-        the COECSA Building at LPU Cavite. The map will provide detailed
-        evacuation routes and safety information to help you navigate emergency
-        situations.
+        Click on the floors to automatically open the Evacuation Thematic Map for the COECSA Building at LPU Cavite. The map will provide detailed
+        evacuation routes and safety information to help you navigate emergency situations.
     </div>
 
     <footer class="footer">
@@ -188,6 +184,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center p-0">
+                    <img src="./assets/homepage/building.png" class="img-fluid rounded" alt="Zoomed COECSA Building" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
