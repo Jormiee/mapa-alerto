@@ -18,6 +18,30 @@ body {
   display: inline-block;
 }
 
+.floor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.floor-list a {
+  width: 140px; /* increased to fit "Ground Floor" */
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap; /* prevents text from wrapping */
+  transition: background-color 0.2s;
+}
+
+.floor-list a:hover {
+  background-color: #cf8a8a;
+}
+
+
 /* Main link */
 .dropdown-toggle {
   text-decoration: none;
@@ -94,6 +118,18 @@ body {
 
   .top-links .dropdown-menu a:hover {
     background-color: rgba(255, 255, 255, 0.1);
+  }
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%); /* Centers the dropdown */
+    right: auto;
+    width: auto; /* Adjust width if necessary */
   }
 }
 
@@ -277,8 +313,8 @@ body {
     margin-left: 0 !important;
     margin-right: auto !important;
   }
+  
 }
-
 
   #searchForm {
     width: 100%;
@@ -908,4 +944,19 @@ hr.event-divider {
 
 .custom-margin-top {
   margin-top: 4rem;
+}
+@media (max-width: 767px) {
+  .floor-list {
+    align-items: center;
+    text-align: center;
+  }
+
+  .floor-list a {
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
 }
