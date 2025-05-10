@@ -48,7 +48,6 @@
     { title: "Home", url: "index.html", keywords: ["home", "main", "landing"] },
     { title: "COECSA Building", url: "coecsa.html", keywords: ["coecsa", "building", "map"] },
     { title: "Ground Floor", url: "groundfloor.html", keywords: ["ground floor", "ground", "floor", "g/f", "gf"] },
-    { title: "1st Floor", url: "1st-floor.html", keywords: ["1st floor", "first floor", "floor 1", "1f"] },
     { title: "2nd Floor", url: "2nd-floor.html", keywords: ["2nd floor", "second floor", "floor 2", "2f", "classroom 201", "classroom 202", "classroom 203", "classroom 204", "information and communication technology department office", "coecsa administrative office", "gs deans office" , "consulatants office", "accreditation room", "doe faculty room", "coecsa deans office"] },
     { title: "3rd Floor", url: "3rd-floor.html", keywords: ["3rd floor", "third floor", "floor 3", "3f","classroom 301","classroom 302","classroom 303","classroom 304","classroom 305","classroom 306","classroom 307","classroom 308","doa faculty room", "dcs faculty room", "cfad consultation and defense room","cfad faculty room", "cfad deans office"] },
     { title: "5th Floor", url: "5th-floor.html", keywords: ["5th floor", "fifth floor", "floor 5", "5f", "energy conversion laboratory", "circuits laboratory", "coecsa laboratory office", "ergonomics laboratory", "electronics laboratory", "hardware networking laboratory", "industrial automation and robotics laboratory", "communication laboratory", "methods study laboratory"] },
@@ -258,3 +257,5 @@
       }
     });
   });
+
+  

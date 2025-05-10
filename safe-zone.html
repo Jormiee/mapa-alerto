@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Safe Zone - Mapa-Alerto</title>
+    <title>5th-floor - Mapa-Alerto</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body style="background-color: #fff">
     <!-- Loader -->
     <div id="loader-overlay">
         <img src="assets/loading-screen.gif" alt="Loading..." style="max-width: 100%; padding: 0; margin: 0" />
@@ -66,7 +66,6 @@
             <div class="dropdown-menu">
                 <a href="coecsa.html">COECSA Building</a>
                 <a href="groundfloor.html">Ground Floor</a>
-                <a href="1st-floor.html">1st Floor</a>
                 <a href="2nd-floor.html">2nd Floor</a>
                 <a href="3rd-floor.html">3rd Floor</a>
                 <a href="5th-floor.html">5th Floor</a>
@@ -105,8 +104,14 @@
         <div class="row align-items-center gap-4" data-aos="zoom-in-down" data-aos-duration="800">
             <!-- Building Image -->
             <div class="col-md-8 mb-4 mb-md-0">
-                <img src="./assets/test-floor.png" alt="Safe Zone Image" class="building-image" style="cursor: zoom-in;" 
-                    data-bs-toggle="modal" data-bs-target="#imageModal" />
+                <picture>
+                    <!-- 👇 MOBILE image -->
+                    <source srcset="./assets/floors/mob/Mobile COECSA GROUND FLOOR-1.png" media="(max-width: 767px)">
+                    <!-- 👇 DESKTOP fallback image -->
+                    <img id="mainImage" src="./assets/floors/COECSA SAFE ZONE.png.png" 
+                        alt="5th floor image" class="building-image" 
+                        style="cursor: zoom-in;" data-bs-toggle="modal" data-bs-target="#imageModal" />
+                </picture>
             </div>
 
             <!-- Right Text -->
@@ -121,7 +126,6 @@
                     <a href="5th-floor.html">5th Floor</a>
                     <a href="3rd-floor.html">3rd Floor</a>
                     <a href="2nd-floor.html">2nd Floor</a>
-                    <a href="1st-floor.html">1st Floor</a>
                     <a href="groundfloor.html">Ground Floor</a>
                 </div>
             </div>
@@ -159,7 +163,6 @@
                     <ul>
                         <li><a href="coecsa.html">COECSA Building</a></li>
                         <li><a href="groundfloor.html">Ground Floor</a></li>
-                        <li><a href="1st-floor.html">1st Floor</a></li>
                         <li><a href="2nd-floor.html">2nd Floor</a></li>
                         <li><a href="3rd-floor.html">3rd Floor</a></li>
                         <li><a href="5th-floor.html">5th Floor</a></li>
@@ -190,7 +193,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-transparent border-0">
                 <div class="modal-body text-center p-0">
-                    <img src="./assets/test-floor.png" class="img-fluid rounded" alt="Zoomed Safe Zone" />
+                    <img id="modalImage" class="img-fluid rounded" alt="Zoomed 5th Floor" />
                 </div>
             </div>
         </div>
@@ -199,6 +202,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        const modalImage = document.getElementById("modalImage");
+        const buildingImage = document.getElementById("mainImage");
+
+        function updateImages() {
+            const isMobile = window.innerWidth <= 767;
+            const mobileSrc = "./assets/floors/mob/Mobile COECSA GROUND FLOOR-1.png";
+            const desktopSrc = "./assets/floors/COECSA SAFE ZONE.png";
+
+            // Set the modal image source
+            modalImage.src = isMobile ? mobileSrc : desktopSrc;
+
+            // Update the main image for mobile/desktop
+            buildingImage.src = isMobile ? mobileSrc : desktopSrc;
+        }
+
+        window.addEventListener("load", updateImages);
+        window.addEventListener("resize", updateImages);
+
+        buildingImage.addEventListener("click", () => {
+            updateImages();
+        });
+    </script>
 </body>
 
 </html>

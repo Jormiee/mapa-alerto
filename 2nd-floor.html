@@ -66,7 +66,6 @@
             <div class="dropdown-menu">
                 <a href="coecsa.html">COECSA Building</a>
                 <a href="groundfloor.html">Ground Floor</a>
-                <a href="1st-floor.html">1st Floor</a>
                 <a href="2nd-floor.html">2nd Floor</a>
                 <a href="3rd-floor.html">3rd Floor</a>
                 <a href="5th-floor.html">5th Floor</a>
@@ -105,14 +104,20 @@
         <div class="row align-items-center gap-4" data-aos="zoom-in-down" data-aos-duration="800">
             <!-- Building Image -->
             <div class="col-md-8 mb-4 mb-md-0">
-                <img src="./assets/test-floor.png" alt="2nd floor image Image" class="building-image" style="cursor: zoom-in;" 
-                    data-bs-toggle="modal" data-bs-target="#imageModal" />
+                <picture>
+                    <!-- 👇 MOBILE image -->
+                    <source srcset="./assets/floors/mob/Mobile COECSA 2ND FLOOR.png" media="(max-width: 767px)">
+                    <!-- 👇 DESKTOP fallback image -->
+                    <img id="mainImage" src="./assets/floors/COECSA 2ND FLOOR.png" 
+                        alt="2nd floor image Image" class="building-image" 
+                        style="cursor: zoom-in;" data-bs-toggle="modal" data-bs-target="#imageModal" />
+                </picture>
             </div>
 
             <!-- Right Text -->
             <div class="col-md-3 text-center text-md-start">
                 <h2 class="fw-bold fs-1">
-                    Safe<br /><small class="fw-normal">Zone</small>
+                    2nd<br /><small class="fw-normal">Floor</small>
                 </h2>
                 <div class="floor-list mt-3 fs-5">
                     <a href="safe-zone.html">Safe Zone</a>
@@ -121,7 +126,6 @@
                     <a href="5th-floor.html">5th Floor</a>
                     <a href="3rd-floor.html">3rd Floor</a>
                     <a href="2nd-floor.html">2nd Floor</a>
-                    <a href="1st-floor.html">1st Floor</a>
                     <a href="groundfloor.html">Ground Floor</a>
                 </div>
             </div>
@@ -159,7 +163,6 @@
                     <ul>
                         <li><a href="coecsa.html">COECSA Building</a></li>
                         <li><a href="groundfloor.html">Ground Floor</a></li>
-                        <li><a href="1st-floor.html">1st Floor</a></li>
                         <li><a href="2nd-floor.html">2nd Floor</a></li>
                         <li><a href="3rd-floor.html">3rd Floor</a></li>
                         <li><a href="5th-floor.html">5th Floor</a></li>
@@ -190,7 +193,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-transparent border-0">
                 <div class="modal-body text-center p-0">
-                    <img src="./assets/test-floor.png" class="img-fluid rounded" alt="Zoomed Safe Zone" />
+                    <img id="modalImage" class="img-fluid rounded" alt="Zoomed 2nd Floor" />
                 </div>
             </div>
         </div>
@@ -199,6 +202,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <!-- <script>
+        const modalImage = document.getElementById("modalImage");
+        const buildingImage = document.getElementById("mainImage");
+
+        function updateImages() {
+            const isMobile = window.innerWidth <= 767;
+            const mobileSrc = "./assets/floors/mob/Mobile COECSA 2ND FLOOR.png";
+            const desktopSrc = "./assets/floors/COECSA 2ND FLOOR.png";
+
+            // Set the modal image source
+            modalImage.src = isMobile ? mobileSrc : desktopSrc;
+
+            // Update the main image for mobile/desktop
+            buildingImage.src = isMobile ? mobileSrc : desktopSrc;
+        }
+
+        window.addEventListener("load", updateImages);
+        window.addEventListener("resize", updateImages);
+
+        buildingImage.addEventListener("click", () => {
+            updateImages();
+        });
+    </script> -->
 </body>
 
 </html>
